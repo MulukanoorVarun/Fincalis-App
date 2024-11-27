@@ -1,0 +1,69 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
+key.properties
+**/*.keystore
+**/*.jks
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+pubspec.lock
+
+# Flutter build outputs
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/FlutterPluginRegistrant.*
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/.flutter-plugins
+ios/.flutter-plugins-dependencies
+ios/.dart_tool/
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Xcode
+*.xcworkspace
+*.xcuserdata/
+*.xcuserstate
+
+# Other
+*.log
+*.swp
+*.swo
+*.tmp
+*.DS_Store
+
+# Packages
+*.flutter-plugins
+*.flutter-plugins-dependencies
+.flutter-plugins-dependencies
+*.dart_tool/
+*.pub/
+
+/build/
+/.dart_tool/
+/*.apk
+/*.aab
+*.so
