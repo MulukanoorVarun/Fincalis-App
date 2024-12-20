@@ -1,6 +1,5 @@
 
 import 'dart:convert';
-import 'dart:convert';
 import 'dart:io';
 import 'dart:ui';
 import 'package:fincalis/utils/Preferances.dart';
@@ -11,9 +10,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'screens/splash.dart';
-
-
-
+import 'firebase_options.dart';
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
     'high_importance_channel', // id
@@ -31,16 +28,10 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Platform.isAndroid
-      ? await Firebase.initializeApp(
-          options: FirebaseOptions(
-            apiKey: "AIzaSyCcHKC4fCLCkM3LlKlqMtF6kVaDmCVdmOk",
-            appId: "1:935851675130:android:2af3702f530506743aa843",
-            messagingSenderId: "935851675130",
-            projectId: "fincalis-8fec7",
-          ),
-        )
-      : await Firebase.initializeApp();
+  // Initialize Firebase using the generated options
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
