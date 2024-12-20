@@ -37,7 +37,6 @@ const timeFormat = "HH:mm:ss";
 const sliderHeight = 180.0;
 const rupeeSymbol = "₹";
 const fav_icon="assets/images/saveicon.svg";
-const mapsApiKey = "AIzaSyCA06NWEP5D-z8WpebENgd4mSOqV-uXIUE";
 const upiRegex = "[a-zA-Z0-9.-]{2,256}@[a-zA-Z][a-zA-Z]{2,64}";
 const vehicleNumberRegex =
     "^[a-zA-Z]{2}[0-9]{1,2}(?:[a-zA-Z])?(?:[a-zA-Z]*)?[0-9]{4}";
